@@ -1,13 +1,9 @@
 
-
+import type { Votes } from '../../types/votes';
 import styles from './VoteStats.module.css';
 
 interface VoteStatsProps {
-  votes: {
-    good: number;
-  neutral: number;
-    bad: number;
-  }
+  votes: Votes;
   totalVotes: number;
   positiveRate: number;
 }
